@@ -95,6 +95,10 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.section__contaioner {
   max-width: 1200px;
   margin: auto;
 }
@@ -119,6 +123,9 @@ p {
   font-weight: var(--weight-regular);
   width: 200px;
   height: 40px;
+  background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .navbar__logo img {
@@ -129,20 +136,29 @@ p {
 
 .navbar__menu {
   display: flex;
+  margin-right: 80px;
 }
 
 .navbar__menu__item {
+  width: 80px;
+  height: 35px;
   padding: 8px 12px;
   margin: 0 4px;
+  text-align: center;
   cursor: pointer;
   border-radius: var(--size-border-radius);
+  background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 1s;
 }
 
 .navbar__menu__item.active {
-  border: 1px solid var(--color-blue);
+  /* border: 1px solid var(--color-blue); */
 }
 .navbar__menu__item:hover {
-  background-color: var(--color-yellow);
+  /* background: var(--color-yellow); */
+  border: 1px solid var(--color-blue);
 }
 
 /* Home */
@@ -161,7 +177,10 @@ p {
 
 .home__title,
 .home__description {
-  color: var(--color-dark-grey);
+  /* color: var(--color-dark-grey); */
+  background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .home__contact {
   font-size: var(--font-regular);
@@ -170,12 +189,24 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+  background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* About */
 .about__description {
-  font-size: 20px;
-  line-height: 45px;
+  line-height: 40px;
+}
+
+.about__description h1 {
+  background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about__description p {
+  font-size: 22px;
 }
 .about__learning {
   display: grid;
@@ -207,4 +238,83 @@ p {
 .learn__period {
   color: var(--color-light-grey);
   font-size: var(--font-small);
+}
+
+/* Skill */
+
+#skills {
+  background-color: var(--color-yellow);
+}
+.skills__contaioner {
+  background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skillset {
+  display: flex;
+  margin: 20px 0;
+  color: var(--color-light-white);
+}
+
+.skillset__title {
+  color: var(--color-white);
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  padding: 20px 40px;
+  background-color: var(--color-dark-grey);
+}
+
+.skill {
+  margin-bottom: 30px;
+}
+.skill:last-child {
+  margin-bottom: 0;
+}
+
+.skill_description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill__img {
+  width: 10%;
+  height: 10%;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+
+.skillset__right {
+  flex-basis: 40%;
+  background-color: var(--color-grey);
+  padding: 20px 40px;
+}
+
+.etc__title {
+  color: var(--color-white);
+}
+
+.etc_description {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 35px 0;
+}
+.etc__img {
+  width: 20%;
+  height: 100%;
 }
