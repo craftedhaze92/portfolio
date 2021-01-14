@@ -156,10 +156,6 @@ p {
   transition: 0.5s;
 }
 
-.navbar__menu__item.active {
-  /* border: 1px solid var(--color-blue); */
-}
-
 .navbar__menu__item:hover {
   /* background: var(--color-yellow); */
   border: 1px solid var(--color-blue);
@@ -359,6 +355,11 @@ p {
 .work__categories {
   margin: 40px;
 }
+.work__container h1 {
+  background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .category__btn {
   width: 150px;
   height: 40px;
@@ -432,4 +433,38 @@ p {
   height: 2px;
   margin-left: -12px;
   background-color: var(--color-dark-white);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-yellow);
+  /* background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0)); */
+}
+.contact__container {
+  background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact__links {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background: url('imgs/logo.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  text-indent: -9999px; /* 대체 텍스트 */
+  transition: all var(--animation-duration) ease-in;
+}
+.contact__links:hover {
+  background: url('imgs/logo_on.svg');
+  background-size: cover;
+  transform: scale(1.1);
+}
+.contact__title {
+  font-size: var(--font-large);
+}
+.contact__title,
+.contact__email {
+  margin: 32px 0;
 }
