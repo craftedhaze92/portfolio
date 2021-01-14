@@ -487,7 +487,7 @@ p {
   }
 
   .navbar__menu {
-  margin-right: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -557,8 +557,10 @@ p {
   .logo_container {
     width: 300px;
     height: 100px;
+    margin-top: 5px;
   }
   .learn_description {
+    width: 100%;
     height: 110px;
     margin-top: 5px;
   }
@@ -566,12 +568,27 @@ p {
 
 /* 450px 반응형 */
 @media screen and (max-width: 450px) {
+  .about__learning {
+    grid-template-columns: repeat(1, 320px);
+  }
+
   .skill__img {
     max-width: 70%;
     max-height: 70%;
   }
+
   .etc__img {
     max-width: 70%;
     max-height: 70%;
+  }
+
+  .learn_description {
+    width: 100%;
+  }
+  .contact__title {
+    font-size: 34px;
+  }
+  .contact__email {
+    font-size: var(--font-regular);
   }
 }
