@@ -485,6 +485,10 @@ p {
   .about__description p {
     font-size: var(--font-regular);
   }
+
+  .navbar__menu {
+  margin-right: 0px;
+  }
 }
 
 /* 768px 반응형 */
