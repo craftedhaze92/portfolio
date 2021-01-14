@@ -101,7 +101,7 @@ p {
   margin: auto;
 }
 
-.section__contaioner {
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -158,6 +158,15 @@ p {
 
 .navbar__menu__item:hover {
   border: 1px solid var(--color-blue);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-blue);
+  display: none;
 }
 
 /* Home */
@@ -258,6 +267,7 @@ p {
 }
 .skills__container {
   max-width: 1200px;
+  width: 100%;
 }
 .Attributes__container {
   background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
@@ -295,7 +305,7 @@ p {
   margin: auto;
   margin-bottom: 10px;
   font-size: var(--font-regular);
-  width: 800px;
+  width: 100%;
   height: 70px;
 }
 
@@ -305,7 +315,7 @@ p {
 }
 
 .skill__bar {
-  width: 790px;
+  width: 100%;
   height: 3px;
   margin: auto;
   background-color: var(--color-grey);
@@ -337,7 +347,7 @@ p {
 }
 
 .etc_description {
-  width: 400px;
+  width: 100%`;
   height: 80px;
   display: flex;
   justify-content: space-around;
@@ -437,7 +447,6 @@ p {
 /* Contact */
 #contact {
   background-color: var(--color-yellow);
-  /* background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0)); */
 }
 .contact__container {
   background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
@@ -466,4 +475,62 @@ p {
 .contact__title,
 .contact__email {
   margin: 32px 0;
+}
+
+/* 768px 반응형 */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+
+  .about__learning {
+    grid-template-columns: repeat(2, 350px);
+  }
+
+  .skillset {
+    flex-wrap: wrap;
+  }
+  .skills__container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .skillset__left {
+    flex-basis: 100%;
+  }
+
+  .skillset__right {
+    flex-basis: 100%;
+  }
+
+  .skill_description {
+    width: 100%;
+  }
+
+  .skill__bar {
+    width: 100%;
+  }
+
+  .etc_description {
+    width: 100%;
+  }
+}
+
+/* 450px 반응형 */
+@media screen and (max-width: 450px) {
+  .about__learning {
+    grid-template-columns: repeat(1, 350px);
+  }
 }
