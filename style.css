@@ -477,6 +477,16 @@ p {
   margin: 32px 0;
 }
 
+/* 930px 반응형 */
+@media screen and (max-width: 930px) {
+  .about__learning {
+    grid-template-columns: repeat(2, 350px);
+  }
+  .about__description p {
+    font-size: var(--font-regular);
+  }
+}
+
 /* 768px 반응형 */
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
@@ -499,13 +509,6 @@ p {
     font-size: var(--font-medium);
   }
   .home__description {
-    font-size: var(--font-regular);
-  }
-
-  .about__learning {
-    grid-template-columns: repeat(2, 350px);
-  }
-  .about__description p {
     font-size: var(--font-regular);
   }
 
@@ -541,13 +544,19 @@ p {
     flex-grow: 1;
   }
 }
-@media screen and (max-width: 670px) {
+
+/* 680px 반응형 */
+@media screen and (max-width: 680px) {
   .about__learning {
     grid-template-columns: repeat(1, 350px);
   }
   .logo_container {
     width: 300px;
     height: 100px;
+  }
+  .learn_description {
+    height: 110px;
+    margin-top: 5px;
   }
 }
 
