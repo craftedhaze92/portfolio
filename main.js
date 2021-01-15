@@ -19,7 +19,14 @@ navbarMenu.addEventListener('click', (event) => {
   if (link === null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+// Navar 반응형 토글 버튼 클릭시 화면
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 // Contact Me 클릭시 화면 이동
