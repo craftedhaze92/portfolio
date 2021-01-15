@@ -392,11 +392,13 @@ p {
   font-size: var(--font-regular);
   padding: 8px 48px;
 }
-/* .category__btn.active, */
+
+/* .category__btn.selected, */
 .category__btn:hover {
   color: var(--color-white);
   background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
 }
+
 .category__count {
   border-radius: 50%;
   color: var(--color-white);
