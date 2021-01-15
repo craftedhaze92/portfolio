@@ -1,6 +1,6 @@
 'use strict';
 
-// 스크롤시 Navbar에 클래스 부여
+// 스크롤시 Navbar에 클래스 추가
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
@@ -11,6 +11,7 @@ document.addEventListener('scroll', () => {
   }
 });
 
+// Navbar 링크 클릭시 이동
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
@@ -21,17 +22,35 @@ navbarMenu.addEventListener('click', (event) => {
   scrollIntoView(link);
 });
 
+// Contact Me 클릭시 화면 이동
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');
 });
 
+// 스크롤시 home 화면 투명도 조정
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+// 스크롤시 arrow up 버튼 생성/삭제
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add('visible');
+  } else {
+    arrowUp.classList.remove('visible');
+  }
+});
+
+// arrow up 버튼 클릭시 home으로 이동
+arrowUp.addEventListener('click', () => {
+  scrollIntoView('#home');
+});
+
+//해당 화면으로 이동 함수
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' }); // 스무스하게 이동
