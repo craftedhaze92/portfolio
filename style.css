@@ -108,6 +108,7 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,6 +117,12 @@ p {
   padding: 16px;
   width: 100%;
   height: auto;
+  transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
+}
+
+#navbar.navbar--dark {
+  padding: 6px;
 }
 
 .navbar__logo {
@@ -179,6 +186,7 @@ p {
 #home {
   background: url('imgs/home-background.png') center/cover no-repeat;
   padding: 40px;
+  padding-top: 130px;
   text-align: center;
 }
 
