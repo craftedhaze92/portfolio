@@ -19,6 +19,7 @@ navbarMenu.addEventListener('click', (event) => {
   if (link === null) {
     return;
   }
+  // 링크 클릭시 열려있는 navbarMenu 닫고 이동
   navbarMenu.classList.remove('open');
   scrollIntoView(link);
 });
