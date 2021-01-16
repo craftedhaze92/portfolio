@@ -97,6 +97,7 @@ p {
 /* Section common */
 .section {
   padding: 50px;
+  padding-top: 60px;
   text-align: center;
   margin: auto;
 }
@@ -161,6 +162,10 @@ p {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   transition: all var(--animation-duration) ease-in;
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-blue);
 }
 
 .navbar__menu__item:hover {
@@ -558,6 +563,7 @@ p {
 @media screen and (max-width: 768px) {
   .section {
     padding: 16px;
+    padding-top: 50px;
   }
 
   .navbar__toggle-btn {
@@ -570,7 +576,7 @@ p {
     align-items: flex-start;
   }
   #navbar.navbar--dark {
-    padding: 16px;
+    padding: 8px;
   }
 
   .navbar__menu {
