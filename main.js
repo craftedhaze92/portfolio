@@ -89,6 +89,32 @@ workBtnContainer.addEventListener('click', (e) => {
   }, 300);
 });
 
+// 총 프로젝트 개수
+const projectCount = projects.length;
+const categoryCount = document.querySelector('.category__count');
+const projectAll = (categoryCount.innerHTML = projectCount);
+
+// 프론트엔드 프로젝트 개수
+const projectFront = document.querySelectorAll(
+  '.project[data-type = "front-end"]'
+);
+const frontCount = document.querySelector('.front_count');
+const frontIner = (frontCount.innerHTML = projectFront.length);
+
+// 백엔드 프로젝트 개수
+const projectBack = document.querySelectorAll(
+  '.project[data-type = "back-end"]'
+);
+const backCount = document.querySelector('.back_count');
+const backIner = (backCount.innerHTML = projectBack.length);
+
+// 모바일 프로젝트 개수
+const projectMobile = document.querySelectorAll(
+  '.project[data-type = "mobile"]'
+);
+const mobileCount = document.querySelector('.mobile_count');
+const mobileIner = (mobileCount.innerHTML = projectMobile.length);
+
 // 페이지 이동시 navbar에 보고있는 화면으로 표시
 const sectionIds = ['#home', '#about', '#skills', '#work', '#contact'];
 
