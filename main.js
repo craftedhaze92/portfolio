@@ -137,7 +137,7 @@ function selectNavItem(selected) {
 //해당 화면으로 이동 함수
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
   // 스무스하게 이동
   selectNavItem(navItems[sectionIds.indexOf(selector)]);
 }
