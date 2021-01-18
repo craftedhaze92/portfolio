@@ -99,21 +99,21 @@ const projectFront = document.querySelectorAll(
   '.project[data-type = "front-end"]'
 );
 const frontCount = document.querySelector('.front_count');
-const frontIner = (frontCount.innerHTML = projectFront.length);
+const frontInner = (frontCount.innerHTML = projectFront.length);
 
 // 백엔드 프로젝트 개수
 const projectBack = document.querySelectorAll(
   '.project[data-type = "back-end"]'
 );
 const backCount = document.querySelector('.back_count');
-const backIner = (backCount.innerHTML = projectBack.length);
+const backInner = (backCount.innerHTML = projectBack.length);
 
 // 모바일 프로젝트 개수
 const projectMobile = document.querySelectorAll(
   '.project[data-type = "mobile"]'
 );
 const mobileCount = document.querySelector('.mobile_count');
-const mobileIner = (mobileCount.innerHTML = projectMobile.length);
+const mobileInner = (mobileCount.innerHTML = projectMobile.length);
 
 // 페이지 이동시 navbar에 보고있는 화면으로 표시
 const sectionIds = ['#home', '#about', '#skills', '#work', '#contact'];
