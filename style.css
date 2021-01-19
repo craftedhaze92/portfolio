@@ -636,7 +636,13 @@ p {
   .etc_description {
     width: 100%;
     font-size: var(--font-small);
-    border-bottom: 1px solid var(--color-light-white);
+    /* border-bottom: 1px solid var(--color-light-white); */
+  }
+  .etc__divider {
+    width: 70%;
+    height: 1px;
+    background-color: lightgray;
+    margin: auto;
   }
   .project {
     flex-grow: 1;
