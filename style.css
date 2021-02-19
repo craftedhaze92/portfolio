@@ -474,6 +474,11 @@ p {
 .project__description h3 {
   color: var(--color-orange);
 }
+
+.project__description span {
+  color: var(--color-yellow);
+}
+
 .project:hover .project__description {
   opacity: 0.8;
   transform: translateY(0px);
@@ -515,6 +520,12 @@ p {
   background: url('imgs/logo_on.svg');
   background-size: cover;
   transform: scale(1.1);
+}
+
+.contact__links a {
+  display: block;
+  width: 150px;
+  height: 150px;
 }
 .contact__title {
   font-size: var(--font-large);
