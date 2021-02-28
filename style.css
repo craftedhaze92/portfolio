@@ -476,6 +476,7 @@ p {
 }
 
 .project__description span {
+  padding: 0 20px;
   color: var(--color-yellow);
 }
 
@@ -494,6 +495,17 @@ p {
   margin-top: 8px;
   transform: translateX(-50%);
   background-color: var(--color-dark-white);
+}
+.project__description a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  width: 50%;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 0 auto;
 }
 
 /* Contact */
