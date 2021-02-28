@@ -381,7 +381,7 @@ p {
 
 /* Work */
 .work__categories {
-  margin: 40px;
+  margin: 40px auto;
 }
 .work__container h1 {
   background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
@@ -428,7 +428,7 @@ p {
 .work__projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
 }

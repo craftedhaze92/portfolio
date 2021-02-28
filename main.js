@@ -65,8 +65,9 @@ const projectContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
 workBtnContainer.addEventListener('click', (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-  if (filter === null) {
-    return;
+  console.log(filter);
+  if (filter === null || filter === undefined) {
+    return e.preventDefault();
   }
 
   //클릭된 카테고리 버튼을 selected로 변경 후 이전 selected는 삭제
