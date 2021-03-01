@@ -156,11 +156,11 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 sections.forEach((section) => observer.observe(section));
 
 // 스크롤링 할때 메뉴아이템 선택
-window.addEventListener('wheel', () => {
+window.addEventListener('scroll', () => {
   if (window.scrollY === 0) {
     selectedNavIndex = 0;
   } else if (
-    Math.round(window.scrollY + window.innerHeight) ===
+    Math.round(window.scrollY + window.innerHeight) >=
     document.body.clientHeight
   ) {
     selectedNavIndex = navItems.length - 1;
