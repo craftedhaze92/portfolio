@@ -261,6 +261,11 @@ p {
 }
 
 .about__description p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
   font-size: 22px;
   font-weight: 600;
 }
