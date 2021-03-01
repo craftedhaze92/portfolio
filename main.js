@@ -115,7 +115,7 @@ const navItems = sectionIds.map((id) =>
 
 // 현재 navitems 값 저장
 let selectedNavIndex = 0;
-let selectedNavItem = navItems[0];
+let selectedNavItem = navItems[selectedNavIndex];
 // 이전 navitems 삭제후 현재 보는 화면 값으로 저장
 
 function selectNavItem(selected) {
