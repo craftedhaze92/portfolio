@@ -210,14 +210,34 @@ p {
 
 .home__title,
 .home__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(to right, rgb(0, 110, 255), rgb(255, 0, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.home__container h2 {
+  animation: pingpong 1.2s infinite alternate;
+}
+
+@keyframes pingpong {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.92);
+  }
+}
+
 .home__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
-  margin: 24px;
+  margin: 24px auto;
   padding: 8px 12px;
   border-radius: var(--size-border-radius);
   color: var(--color-dark-grey);
@@ -242,6 +262,7 @@ p {
 
 .about__description p {
   font-size: 22px;
+  font-weight: 600;
 }
 .about__learning {
   display: grid;
