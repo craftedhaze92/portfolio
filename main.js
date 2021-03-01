@@ -156,7 +156,7 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 sections.forEach((section) => observer.observe(section));
 
 // 스크롤링 할때 메뉴아이템 선택
-window.addEventListener('scroll', () => {
+window.addEventListener('wheel', () => {
   if (window.scrollY === 0) {
     selectedNavIndex = 0;
   } else if (
