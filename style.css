@@ -40,7 +40,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0;
 }
 
@@ -267,7 +267,7 @@ p {
   width: 70%;
   margin: 0 auto;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: var(--weight-semi-bold);
 }
 .about__learning {
   display: grid;
@@ -305,6 +305,10 @@ p {
 .learn__period {
   color: var(--color-light-grey);
   font-size: var(--font-small);
+}
+
+.learn__lesson {
+  font-weight: var(--weight-semi-bold);
 }
 
 /* Skill */
