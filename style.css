@@ -357,8 +357,9 @@ p {
 }
 
 .skill {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
+
 .skill:last-child {
   margin-bottom: 0;
 }
