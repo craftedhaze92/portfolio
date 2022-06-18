@@ -735,8 +735,8 @@ p {
   }
 }
 
-/* 680px 반응형 */
-@media screen and (max-width: 680px) {
+/* 700px 반응형 */
+@media screen and (max-width: 700px) {
   .about__learning {
     grid-template-columns: repeat(1, 350px);
   }
