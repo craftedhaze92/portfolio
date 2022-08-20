@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/DoHyunHwang/portfolio#readme",
   "dependencies": {
-    "sass": "^1.52.3"
+    "sass": "^1.54.4",
+    "scss": "^0.2.4"
   }
 }
