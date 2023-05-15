@@ -1,9 +1,7 @@
 # portfolio
 안녕하세요!
 
-황도현의 깃허브에 방문해 주셔서 감사합니다
-
-반응형까지 완료된 포트폴리오 입니다.
+- 바닐라 JavaScript로 만든 웹페이지 
 
 -  https://dohyunhwang.github.io/portfolio/
 
