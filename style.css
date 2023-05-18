@@ -221,7 +221,7 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
-.home__container h2 {
+/* .home__container h2 {
   animation: pingpong 1.2s infinite alternate;
 }
 
@@ -232,7 +232,7 @@ p {
   100% {
     transform: scale(0.92);
   }
-}
+} */
 
 .home__contact {
   display: flex;
